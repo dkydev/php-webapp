@@ -37,7 +37,7 @@ class Output {
 		
 		include $this->page->template;
 		
-		//unset($_SESSION["aMessage"]);
+		unset($_SESSION["aMessage"]);
 		
 	}
 	

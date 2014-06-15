@@ -20,6 +20,7 @@ class MainController {
 				// input
 				"defaultPage" 				=> "login",
 				"defaultCommand" 			=> "view",
+				
 				// output
 					
 		);

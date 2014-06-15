@@ -23,3 +23,792 @@ name=[7] ":userId"
 is_param=1
 param_type=0
 
+[debug] (1402806755) 15-06-2014 06:32:35 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402806755) 15-06-2014 06:32:35 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830061) 15-06-2014 13:01:01 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830061) 15-06-2014 13:01:01 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830064) 15-06-2014 13:01:04 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830064) 15-06-2014 13:01:04 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830068) 15-06-2014 13:01:08 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830068) 15-06-2014 13:01:08 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830308) 15-06-2014 13:05:08 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830308) 15-06-2014 13:05:08 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830535) 15-06-2014 13:08:55 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830535) 15-06-2014 13:08:55 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830535) 15-06-2014 13:08:55 :: 1
+[debug] (1402830535) 15-06-2014 13:08:55 :: 1
+[debug] (1402830535) 15-06-2014 13:08:55 :: 1
+[debug] (1402830628) 15-06-2014 13:10:28 :: 1
+[debug] (1402830628) 15-06-2014 13:10:28 :: 1
+[debug] (1402830630) 15-06-2014 13:10:30 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830630) 15-06-2014 13:10:30 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830630) 15-06-2014 13:10:30 :: 1
+[debug] (1402830630) 15-06-2014 13:10:30 :: 1
+[debug] (1402830651) 15-06-2014 13:10:51 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830651) 15-06-2014 13:10:51 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830669) 15-06-2014 13:11:09 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830669) 15-06-2014 13:11:09 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830735) 15-06-2014 13:12:15 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402830735) 15-06-2014 13:12:15 :: 1
+[debug] (1402830735) 15-06-2014 13:12:15 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+[debug] (1402830795) 15-06-2014 13:13:15 :: 
+[[[
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402830795) 15-06-2014 13:13:15 :: 1
+[debug] (1402830795) 15-06-2014 13:13:15 :: 
+[[[
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402830813) 15-06-2014 13:13:33 :: 
+
+[[[
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402830813) 15-06-2014 13:13:33 :: 1
+[debug] (1402830813) 15-06-2014 13:13:33 :: 
+
+[[[
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402830829) 15-06-2014 13:13:49 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402830829) 15-06-2014 13:13:49 :: 1
+[debug] (1402830829) 15-06-2014 13:13:49 :: 
+
+[[[
+
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831380) 15-06-2014 13:23:00 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831380) 15-06-2014 13:23:00 :: 1
+[debug] (1402831380) 15-06-2014 13:23:00 :: 1
+[debug] (1402831380) 15-06-2014 13:23:00 :: 
+
+[[[
+
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831388) 15-06-2014 13:23:08 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831388) 15-06-2014 13:23:08 :: 1
+[debug] (1402831388) 15-06-2014 13:23:08 :: 1
+[debug] (1402831388) 15-06-2014 13:23:08 :: 
+
+[[[
+
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831404) 15-06-2014 13:23:24 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831404) 15-06-2014 13:23:24 :: 1
+[debug] (1402831454) 15-06-2014 13:24:14 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831483) 15-06-2014 13:24:43 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831623) 15-06-2014 13:27:03 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831623) 15-06-2014 13:27:03 :: 
+
+[[[
+
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831678) 15-06-2014 13:27:58 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831678) 15-06-2014 13:27:58 :: 
+
+[[[
+
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831790) 15-06-2014 13:29:50 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831790) 15-06-2014 13:29:50 :: 
+
+[[[
+
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831805) 15-06-2014 13:30:05 :: 
+
+[[[
+
+SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831805) 15-06-2014 13:30:05 :: 
+
+[[[
+
+SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
+]]]
+
+[debug] (1402831975) 15-06-2014 13:32:55 :: 1
+[debug] (1402831989) 15-06-2014 13:33:09 :: 1
+[debug] (1402832606) 15-06-2014 13:43:26 :: 1
+[debug] (1402832636) 15-06-2014 13:43:56 :: 1
+[debug] (1402832636) 15-06-2014 13:43:56 :: 1
+[debug] (1402832668) 15-06-2014 13:44:28 :: 1
+[debug] (1402832670) 15-06-2014 13:44:30 :: 1
+[debug] (1402832712) 15-06-2014 13:45:12 :: 1
+[debug] (1402832805) 15-06-2014 13:46:45 :: 1
+[debug] (1402832929) 15-06-2014 13:48:49 :: 1
+[debug] (1402832933) 15-06-2014 13:48:53 :: 1
+[debug] (1402833045) 15-06-2014 13:50:45 :: 1
+[debug] (1402833189) 15-06-2014 13:53:09 :: 1
+[debug] (1402833223) 15-06-2014 13:53:43 :: 1
+[debug] (1402833256) 15-06-2014 13:54:16 :: 1
+[debug] (1402833309) 15-06-2014 13:55:09 :: 1
+[debug] (1402833363) 15-06-2014 13:56:03 :: 1
+[debug] (1402833433) 15-06-2014 13:57:13 :: 1
+[debug] (1402833433) 15-06-2014 13:57:13 :: 1
+[debug] (1402833445) 15-06-2014 13:57:25 :: 1
+[debug] (1402833518) 15-06-2014 13:58:38 :: 1
+[debug] (1402833518) 15-06-2014 13:58:38 :: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [password] => 5f4dcc3b5aa765d61d8327deb882cf99
+)
+
+[debug] (1402833603) 15-06-2014 14:00:03 :: 1
+[debug] (1402833664) 15-06-2014 14:01:04 :: Array
+(
+    [user_id] => 1
+    [username] => admin
+    [password] => 5f4dcc3b5aa765d61d8327deb882cf99
+)
+
+[debug] (1402833699) 15-06-2014 14:01:39 :: apples 1
+[debug] (1402833890) 15-06-2014 14:04:50 :: SELECT * FROM block_page 
+				LEFT JOIN block ON block.block_id = block_page.block_id
+				LEFT JOIN page ON page.page_id = block_page.page_id
+				WHERE page.alias = :alias;Array
+(
+    [0] => Array
+        (
+            [0] => :alias
+            [1] => login
+        )
+
+)
+
+[debug] (1402833890) 15-06-2014 14:04:50 :: SELECT * FROM block_page 
+				LEFT JOIN block ON block.block_id = block_page.block_id
+				LEFT JOIN page ON page.page_id = block_page.page_id
+				WHERE page.alias = :alias;Array
+(
+    [0] => Array
+        (
+            [0] => :alias
+            [1] => login
+        )
+
+)
+
+[debug] (1402833891) 15-06-2014 14:04:51 :: SELECT * FROM block_page 
+				LEFT JOIN block ON block.block_id = block_page.block_id
+				LEFT JOIN page ON page.page_id = block_page.page_id
+				WHERE page.alias = :alias;Array
+(
+    [0] => Array
+        (
+            [0] => :alias
+            [1] => favicon.ico
+        )
+
+)
+
+[debug] (1402833891) 15-06-2014 14:04:51 :: SELECT * FROM block_page 
+				LEFT JOIN block ON block.block_id = block_page.block_id
+				LEFT JOIN page ON page.page_id = block_page.page_id
+				WHERE page.alias = :alias;Array
+(
+    [0] => Array
+        (
+            [0] => :alias
+            [1] => login
+        )
+
+)
+
+[debug] (1402833891) 15-06-2014 14:04:51 :: SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);Array
+(
+    [0] => Array
+        (
+            [0] => :username
+            [1] => admin
+            [2] => 2
+        )
+
+    [1] => Array
+        (
+            [0] => :password
+            [1] => password
+            [2] => 2
+        )
+
+)
+
+[debug] (1402833891) 15-06-2014 14:04:51 :: SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;Array
+(
+    [0] => Array
+        (
+            [0] => :userId
+            [1] => 1
+            [2] => 1
+        )
+
+)
+
+[debug] (1402833891) 15-06-2014 14:04:51 :: SELECT * FROM block_page 
+				LEFT JOIN block ON block.block_id = block_page.block_id
+				LEFT JOIN page ON page.page_id = block_page.page_id
+				WHERE page.alias = :alias;Array
+(
+    [0] => Array
+        (
+            [0] => :alias
+            [1] => login
+        )
+
+)
+
+[debug] (1402833891) 15-06-2014 14:04:51 :: SELECT * FROM block_page 
+				LEFT JOIN block ON block.block_id = block_page.block_id
+				LEFT JOIN page ON page.page_id = block_page.page_id
+				WHERE page.alias = :alias;Array
+(
+    [0] => Array
+        (
+            [0] => :alias
+            [1] => favicon.ico
+        )
+
+)
+
+[debug] (1402834144) 15-06-2014 14:09:04 :: Array
+(
+    [user_group_id] => 1
+    [user_id] => 1
+    [group_id] => 1
+    [group_name] => Administrator
+)
+

@@ -1,8 +1,9 @@
 <?php 
 
-define("NDD_LOG_DEBUG", "debug");
-define("NDD_LOG_INFO", "info");
-define("NDD_LOG_ERROR", "error");
+define("NDD_LOG_DEBUG", 		"debug");
+define("NDD_LOG_WARNING", 		"warning");
+define("NDD_LOG_INFO", 			"info");
+define("NDD_LOG_ERROR", 		"error");
 
 class LOG {
 	
