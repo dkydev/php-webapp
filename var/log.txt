@@ -1,0 +1,25 @@
+
+[debug] (1402806378) 15-06-2014 06:26:18 :: SQL: [85] SELECT * FROM user				
+				WHERE username = :username AND password = MD5(:password);
+Params:  2
+Key: Name: [9] :username
+paramno=-1
+name=[9] ":username"
+is_param=1
+param_type=0
+Key: Name: [9] :password
+paramno=-1
+name=[9] ":password"
+is_param=1
+param_type=0
+
+[debug] (1402806378) 15-06-2014 06:26:18 :: SQL: [115] SELECT * FROM user_group
+				LEFT JOIN group ON group.group_id = user_group.group_id
+				WHERE user_id = :userId;
+Params:  1
+Key: Name: [7] :userId
+paramno=-1
+name=[7] ":userId"
+is_param=1
+param_type=0
+
