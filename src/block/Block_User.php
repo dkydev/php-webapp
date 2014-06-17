@@ -8,15 +8,15 @@ class Block_User extends Block {
 	
 	}
 	
-	function cmd_view(&$input, &$output) {
+	function cmd_view(&$output) {
 		
 	}
 	
-	function cmd_edit(&$input, &$output) {
+	function cmd_edit(&$output) {
 		
 	}
 	
-	function cmd_update(&$input, &$output) {
+	function cmd_update(&$output) {
 		
 	}
 	

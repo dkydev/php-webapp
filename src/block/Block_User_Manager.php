@@ -8,16 +8,16 @@ class Block_User_Manager extends Block {
 		
 	}
 	
-	function cmd_list(&$input, &$output) {
+	function cmd_list(&$output) {
 	
 	}
-	function cmd_view(&$input, &$output) {
+	function cmd_view(&$output) {
 		
 	}
-	function cmd_edit(&$input, &$output) {
+	function cmd_edit(&$output) {
 		
 	}
-	function cmd_update(&$input, &$output) {
+	function cmd_update(&$output) {
 		
 	}
 	

@@ -10,26 +10,26 @@ class Block_Login extends Block {
 	
 	}
 	
-	function cmd_view(&$input, &$output) {
-			
+	function cmd_view() {
+		
 		if (empty($_SESSION["userId"])) {
 			$this->template = "template_login.php";
-			$output->pageTitle = "Login";
+			$this->pageTitle = "Login";
 		} else {
 			$this->template = "template_logout.php";
-			$output->pageTitle = "Logout";
-			$output->username = $_SESSION["username"];
+			$this->pageTitle = "Logout";
+			$this->username = $_SESSION["username"];
 		}
 	}
 	
-	function cmd_login(&$input, &$output) {
+	function cmd_login() {
 	
 		//login
 		//DB::debug(true);
-		if (!empty($input->aRequest["username"]) && !empty($input->aRequest["password"])) {
+		if (!empty($this->aRequest["username"]) && !empty($this->aRequest["password"])) {
 						
 			$DAO_User = new DAO_User();
-			$do_user = $DAO_User->login($input->aRequest["username"], $input->aRequest["password"]);
+			$do_user = $DAO_User->login($this->aRequest["username"], $this->aRequest["password"]);
 			
 			if (!empty($do_user["user_id"])) {
 				
@@ -37,30 +37,30 @@ class Block_Login extends Block {
 				$_SESSION["username"] 	= $do_user["username"];
 				$_SESSION["aGroup"] 	= $DAO_User->getUserGroups($do_user["user_id"]);
 				
-				$output->raiseMessage("You are now logged in as " . $do_user["username"] . ".", MSG_TYPE_SUCCESS);
+				//$output->raiseMessage("You are now logged in as " . $do_user["username"] . ".", MSG_TYPE_SUCCESS);
 			
 			} else {
 				
-				$output->raiseMessage("Username or password incorrect.", MSG_TYPE_DANGER);
+				//$output->raiseMessage("Username or password incorrect.", MSG_TYPE_DANGER);
 				
 			}
 			
 		}
 		
-		header("Location: /" . $input->aRequest["page"]);
+		header("Location: /" . $this->aRequest["alias"]);
 		exit();
 		
 	}
 	
-	function cmd_logout(&$input, &$output) {
-	
+	function cmd_logout() {
+		
 		//logout
 		
 		session_destroy();
 		session_start();
-		$output->raiseMessage("You are now logged out.", "success");
+		//$output->raiseMessage("You are now logged out.", "success");
 	
-		header("Location: /" . $input->aRequest["page"]);
+		header("Location: /" . $this->aRequest["alias"]);
 		exit();
 		
 	}

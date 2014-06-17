@@ -7,14 +7,13 @@ class DB {
 	
 	public static function init($aGlobalConfig) {
 		
-		DB::$debug = false;
+		DB::$debug = PDO::ERRMODE_EXCEPTION;
 		
 		try {
 		
 			DB::$dbh = new PDO('mysql:host=localhost;dbname=framework', 'root', '', array(
-			    PDO::ATTR_PERSISTENT => true,
-			    PDO::ATTR_ERRMODE => true,
-			    PDO::ERRMODE_EXCEPTION => true
+			    PDO::ATTR_PERSISTENT 	=> 1,
+			    PDO::ATTR_ERRMODE 		=> DB::$debug,
 			));
 		
 		} catch (PDOException $e) {
@@ -24,7 +23,7 @@ class DB {
 		}
 		
 	}
-	public static function query($sql, $aParam = null) {
+	public static function query($sql, $aParams = null) {
 		
 		$sth = null;
 		
@@ -32,11 +31,13 @@ class DB {
 			
 			$sth = DB::$dbh->prepare($sql);
 			
-			foreach ($aParam as $aValue) {
-				$sth->bindParam($aValue[0], $aValue[1], empty($aValue[2]) ? null : $aValue[2]);
+			if (!empty($aParams)) {
+				foreach ($aParams as $aValue) {
+					$sth->bindParam($aValue[0], $aValue[1], empty($aValue[2]) ? null : $aValue[2]);
+				}
 			}
 			
-			if (DB::$debug) {
+			if (DB::$debug >= 1) {
 				
 				ob_start();
 				
@@ -63,7 +64,7 @@ class DB {
 	public static function debug($debugValue) {
 		
 		DB::$debug = $debugValue;
-		
+		DB::$dbh->setAttribute(PDO::ATTR_ERRMODE, $debugValue);
 	}
 	
 }

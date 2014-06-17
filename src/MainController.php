@@ -2,7 +2,6 @@
 
 require_once NDD_PATH_SRC . "/DB.php";
 require_once NDD_PATH_SRC . "/LOG.php";
-require_once NDD_PATH_SRC . "/Input.php";
 require_once NDD_PATH_SRC . "/Output.php";
 require_once NDD_PATH_SRC . "/Page.php";
 
@@ -17,23 +16,17 @@ class MainController {
 				"logEnabled"				=> "1",
 				"logFilePath"				=> "var/log.txt",
 					
-				// input
-				"defaultPage" 				=> "login",
+				"defaultAlias" 				=> "login",
 				"defaultCommand" 			=> "view",
-				
-				// output
 					
 		);
 		
 		DB::init($aGlobalConfig);
-		LOG::init($aGlobalConfig);
-		
-		
-		$input = new Input($aGlobalConfig);		
+		LOG::init($aGlobalConfig);		
+			
 		$output = new Output($aGlobalConfig);
 		
-		$output->page = Page::getPage($input, $output);
-		//$module->executeCommand($input, $output);		
+		$output->page = Page::getPage($output);		
 		
 		$output->display();
 		

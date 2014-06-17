@@ -2,26 +2,34 @@
 
 class Block {
 	
-	public $template;
+	public $aRequest;
 	
-	public static function getBlock($do_page, &$input, &$output) {
+	public $template;
+	public $blockPageId;
+	public $position;
+	public $order;
+	public $blockId;
+	public $blockName;
+	
+	public $bi;
+	public $bn;
+	
+	public static function getBlock($do_block_page) {
 		
-		$blockName = 'Block_' . $do_page["block_name"];
+		$blockName = 'Block_' . $do_block_page["block_name"];
+		
 		require_once $blockName . ".php";
-		$block = new $blockName();
+
+		$block = new $blockName();		
+		$block->block_page_id 	= $do_block_page["block_page_id"];
+		$block->position 		= $do_block_page["position"];
+		$block->order 			= $do_block_page["order"];
+		$block->block_id 		= $do_block_page["block_id"];
+		$block->block_name 		= $do_block_page["block_name"];
+
+		$block->bi = "block-".$block->block_page_id;
+		$block->bn = "block[".$block->block_page_id."]";
 		
-		if ($do_page["main_block_page_id"] == $do_page["block_page_id"] && !empty($input->aRequest["command"])) {
-			// get command from URI for main block
-			$command = $input->aRequest["command"];
-		} else if (!empty($input->aRequest["aBlockCommand"][$do_page["block_page_id"]])) {
-			// get block command from $input
-			$command = $input["aBlockCommand"][$do_page["block_page_id"]];
-		} else {
-			// use default command for block
-			$command = $block->defaultCommand;
-		}		
-		
-		$block->$command($input, $output);
 		return $block;
 		
 	}
