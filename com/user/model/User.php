@@ -20,8 +20,7 @@ class User_Model
 		$sth->execute();
 		while ($aUserGroup = $sth->fetch()) {
 			$aGroupIds[] = $aUserGroup["group_id"];
-		}
-		
+		}		
 		return $aGroupIds;
 	}
 	public function getUserGroups($user_id)
@@ -42,6 +41,20 @@ class User_Model
 	public function getUser($user_id)
 	{
 		return DB::get("user", "user_id", $user_id);
+	}
+	public function getGroups()
+	{
+	    $sth = DB::query("SELECT * from `group`;");
+	    $sth->execute();
+	    $aGroups = array();
+	    while ($aGroup = $sth->fetch()) {
+	        $aGroups[$aGroup["group_id"]] = $aGroup;
+	    }
+	    return $aGroups;
+	}
+	public function getGroup($group_id)
+	{
+	    return DB::get("group", "group_id", $group_id);
 	}
 }
 

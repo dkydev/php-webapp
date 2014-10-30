@@ -33,14 +33,15 @@ class NestedSet {
     {
         DB::beginTransaction();
         $nodeId = DB::insert($this->_table, $aNode);
-        $aNode["root_id"]   = $nodeId;
-        $aNode["parent_id"] = null;
-        $aNode["left_id"]   = $nodeId;
-        $aNode["right_id"]  = $nodeId;
-        $aNode["level"]     = 1;
-        $aNode["order"]     = $this->getNextNodeId(1);
-        DB::update($this->_table, $aNode, $this->_table_key, $nodeId);        
-        return DB::commit();
+//         $aNode["root_id"]   = $nodeId;
+//         $aNode["parent_id"] = null;
+//         $aNode["left_id"]   = $nodeId;
+//         $aNode["right_id"]  = $nodeId;
+//         $aNode["level"]     = 1;
+//         $aNode["order"]     = $this->getNextNodeId(1);
+//         DB::update($this->_table, $aNode, $this->_table_key, $nodeId);  
+        DB::commit();
+        return $nodeId;
         
         /*
         $aNode["root_id"]
@@ -66,7 +67,7 @@ class NestedSet {
     public function updateNode($aNode)
     {
         DB::beginTransaction();
-        $result = DB::update("menu_item", $aNode, "menu_item_id");
+        $result = DB::update("menu_item", $aNode, "menu_item_id", $aNode[$this->_table_key]);
         return DB::commit();
     }
     public function deleteNode($nodeId)

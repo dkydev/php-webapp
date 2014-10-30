@@ -47,7 +47,7 @@ class Output
         $sql = "SELECT * FROM `block`
                 LEFT JOIN `block_page`     ON `block_page`.`block_id`      = `block`.`block_id`
                 LEFT JOIN `block_group` ON `block_group`.`block_id`     = `block`.`block_id`
-                WHERE ((`block`.`exclusive` = 0 AND `block_page`.`page_id` = :page_id) OR (`block`.`exclusive` = 1 AND `block_page`.`page_id` IS NULL))
+                WHERE ((`block`.`group_exclusive` = 0 AND `block_page`.`page_id` = :page_id) OR (`block`.`group_exclusive` = 1 AND `block_page`.`page_id` IS NULL))
                 AND `block_group`.`group_id` IN (:aGroupId);";
         $sth = DB::query($sql);
         $sth->bind("page_id", $pageId);

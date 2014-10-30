@@ -4,19 +4,21 @@ require_once PATH_LIB . "/Controller.php";
 require_once PATH_COM . "/menu/model/Menu.php";
 
 class Menu_Controller extends Controller
-{	
+{
     public function action_insert($request)
     {
         $MenuModel = new Menu_Model();
         $aMenuItem = $request->get("menuItem");
         
-        $result = $MenuModel->insertMenuItem($aMenuItem);
+        $menuItemId = $MenuModel->insertMenuItem($aMenuItem);
         
-        if (!empty($result)) {
+        if (!empty($menuItemId)) {
             Output::raiseMessage("Menu item added successfully.", MSG_TYPE_SUCCESS);
         } else {
             Output::raiseMessage("Menu item NOT added.", MSG_TYPE_ERROR);
-        }        
+        }
+        header("Location: ?menuItemId=" . $menuItemId);
+        exit();
     }
     public function action_update($request)
     {
@@ -28,6 +30,8 @@ class Menu_Controller extends Controller
         } else {
             Output::raiseMessage("Menu item NOT updated.", MSG_TYPE_ERROR);
         }
+        header("Location: ?menuItemId=" . $aMenuItem["menu_item_id"]);
+        exit();
     }
     public function action_delete($request)
     {

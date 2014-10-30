@@ -12,7 +12,7 @@
   <thead>
     <tr>
       <th>Menu ID</th>
-      <th>Label</th>
+      <th>Name</th>
       <th>Target</th>
       <th></th>
     </tr>
@@ -21,8 +21,8 @@
 	<?php foreach ($this->aPagedData["aData"] as $key => $aValue):	?>
 		<tr>
 			<td><?=$aValue["menu_item_id"]?></td>
-			<td><?=$aValue["label"]?></td>
-			<td><?=$aValue["target"]?></td>
+			<td><?=$aValue["name"]?></td>
+			<td><?=$aValue["url"]?></td>
 			<td>
 			  <a class="btn btn-xs btn-primary" href="?menuItemId=<?=$aValue["menu_item_id"]?>"><i class="fa fa-pencil-square-o"></i></a>
 			  <a class="btn btn-xs btn-danger" href="?component=menu&action=delete&menuItemId=<?=$aValue["menu_item_id"]?>"><i class="fa fa-trash-o"></i></a>

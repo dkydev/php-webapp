@@ -24,16 +24,36 @@
 	  </div>
 	  
 	  <div class="form-group">
-	    <label for="menu-label" class="col-sm-2 control-label">Title</label>
+	    <label for="menu-name" class="col-sm-2 control-label">Name</label>
 	    <div class="col-sm-10">
-	      <input name="menuItem[label]" type="text" class="form-control" id="menu-label" placeholder="Label" value="<?=$this->aMenuItem["label"]?>" />
+	      <input name="menuItem[name]" type="text" class="form-control" id="menu-name" placeholder="Name" value="<?=$this->aMenuItem["name"]?>" />
 	    </div>
 	  </div>
 	  
 	  <div class="form-group">
-	    <label for="menu-target" class="col-sm-2 control-label">Target</label>
+	    <label for="menu-title" class="col-sm-2 control-label">Title</label>
 	    <div class="col-sm-10">
-	      <input name="menuItem[target]" type="text" class="form-control" id="menu-target" placeholder="Target" value="<?=$this->aMenuItem["target"]?>" />
+	      <input name="menuItem[title]" type="text" class="form-control" id="menu-title" placeholder="Title" value="<?=$this->aMenuItem["title"]?>" />
+	    </div>
+	  </div>
+	  
+	  <div class="form-group">
+	    <label for="menu-url" class="col-sm-2 control-label">URL</label>
+	    <div class="col-sm-10">
+	      <input name="menuItem[url]" type="text" class="form-control" id="menu-url" placeholder="url" value="<?=$this->aMenuItem["url"]?>" />
+	    </div>
+	  </div>
+	  
+	  <div class="form-group">
+	    <label for="menu-parent" class="col-sm-2 control-label">Group Access</label>
+	    <div class="col-sm-10">
+	      <?php foreach ($this->aGroups as $groupId => $aGroup): ?>
+	        <?php if (!empty($this->aMenuItem["aGroupIds"]) && in_array($groupId, $this->aMenuItem["aGroupIds"])): ?>
+	          <div class="checkbox"><label><input type="checkbox" checked name="menuItem[aGroupIds][]" value="<?=$groupId?>"><?=$aGroup["label"]?></label></div>
+	        <?php else: ?>
+	          <div class="checkbox"><label><input type="checkbox" name="menuItem[aGroupIds][]" value="<?=$groupId?>"><?=$aGroup["label"]?></label></div>
+	        <?php endif; ?>
+	      <?php endforeach; ?>
 	    </div>
 	  </div>
 	  
