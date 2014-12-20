@@ -1,0 +1,11 @@
+Managers:
+- item manager
+  - nested set crud
+  - nested set move branch (updating..?)
+  - blocks per item
+- block manager
+- menu manager
+- user manager
+- group manager
+  - group permissions (by component-action)
+- component manager

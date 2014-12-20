@@ -6,9 +6,9 @@
   <body>
     <div id="wrapper">
 		
-        <?php if (!empty($this->aPosition["top"])): ?>
-          <div class='container-fluid'>
-            <?php foreach ($this->aPosition["top"] as $block): ?>
+        <?php if (!empty($this->aBlocks["main"])): ?>
+          <div class='container-fluid' id="main">
+            <?php foreach ($this->aBlocks["main"] as $block): ?>
               <?=$block->render()?>
             <?php endforeach; ?>
           </div>

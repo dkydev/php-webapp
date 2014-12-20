@@ -1,4 +1,4 @@
 <?php
-	require_once '../lib/FrontController.php';	
-	FrontController::run();
+	require_once '../lib/dky/FrontController.php';	
+	DKY_FrontController::run();
 ?>
